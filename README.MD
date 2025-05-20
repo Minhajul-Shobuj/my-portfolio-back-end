@@ -1,22 +1,12 @@
-# 📚 BOOKLOVER Back-End
+# 📚 MY PORTFOLIO Back-End
 
-_This is a backend application for Blog web app. The application is created using typescript, express, mongoose. Used MongoDb atlas for database. It has maximum number of crud operation that an Blog web application needed._
+_This is a backend application for MY portfolio web app. The application is created using typescript, express, mongoose. Used MongoDb atlas for database. It has maximum number of crud operation that an Portfolio web application needed._
 
 ---
 
 ## 🚀 Live Demo
 
-🌐 [Click here to view the live version](https://assignment-3-six-psi.vercel.app/)
-
----
-
-## ✨ Features
-
-✅ **Feature 1**: Can register user using their necessery document.  
-✅ **Feature 2**: After register and login user can place order for buying book, see their dashboard, update password
-✅ **Feature 3**: Admin can make any user blocked and can delete any blog.
-
----
+🌐 [Click here to view the live version](https://portfolio-backend-gamma-ebon.vercel.app/api)
 
 ## 🛠️ Prerequisites
 
@@ -32,7 +22,7 @@ Before you begin, ensure you have the following installed:
 ### Step 1: Clone the repository
 
 ```bash
-git https://github.com/Minhajul-Shobuj/level-2-assingnment-3
+git https://github.com/Minhajul-Shobuj/my-portfolio-back-end
 cd your-repository-name
 
 ```
@@ -76,27 +66,6 @@ npm run build
 ```bash
 npm start
 ```
-
-📖 API Endpoints
-
-👨🏻‍💼 User
-
-1. POST /api/auth/register: Register User.
-2. POST /api/auth/login: Login User.
-
-👮 Admin
-
-3. PATCH /api/admin/users/:userId/block: Block User.
-
-🫂 Public
-
-8. GET /api/books: Get All Books (Public)
-
-🔧 Scripts
-
-1. npm run dev: Start the development server.
-2. npm run build: Build the project.
-3. npm start: Start the production server.
 
 🤝 Contributing
 Contributions are welcome! Follow these steps to contribute:
