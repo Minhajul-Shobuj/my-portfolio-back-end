@@ -14,6 +14,16 @@ const createSkills: RequestHandler = catchAsync(async (req, res) => {
   })
 })
 
+const getAllSkills: RequestHandler = catchAsync(async (req, res) => {
+  const result = await SkillService.getAllSkillsFromDB()
+  sendResponse(res, {
+    success: true,
+    data: result,
+    message: 'Successfully get all Skills from database',
+    statusCode: httpStatus.OK,
+  })
+})
 export const SkillController = {
   createSkills,
+  getAllSkills,
 }

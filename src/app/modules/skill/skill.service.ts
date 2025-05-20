@@ -12,7 +12,12 @@ const createskillsInDB = async (payload: TSkill) => {
     return result
   }
 }
+const getAllSkillsFromDB = async () => {
+  const result = await Skill.find()
+  return result
+}
 
 export const SkillService = {
   createskillsInDB,
+  getAllSkillsFromDB,
 }
