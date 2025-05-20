@@ -8,7 +8,7 @@ const skillSchema = new Schema<TSkill>(
       required: true,
     },
     skills: {
-      type: [String],
+      type: [],
       required: true,
     },
   },

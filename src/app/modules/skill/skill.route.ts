@@ -12,4 +12,6 @@ router.post(
 )
 router.get('/', SkillController.getAllSkills)
 
+router.delete('/:id', SkillController.deleteSkill)
+
 export const SkillRoute = router

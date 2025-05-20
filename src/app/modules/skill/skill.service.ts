@@ -16,8 +16,13 @@ const getAllSkillsFromDB = async () => {
   const result = await Skill.find()
   return result
 }
+const deleteSkillFromDb = async (id: string) => {
+  const result = await Skill.findByIdAndDelete(id)
+  return result
+}
 
 export const SkillService = {
   createskillsInDB,
   getAllSkillsFromDB,
+  deleteSkillFromDb,
 }

@@ -27,7 +27,7 @@ app.use('/api/projects', ProjectRoute)
 app.use('/api/messages', MessageRoute)
 app.use('/api/admin', AdminRoute)
 app.use('/api/auth', AuthRoute)
-app.use('/api/skill', SkillRoute)
+app.use('/api/skills', SkillRoute)
 app.get('/', (req: Request, res: Response) => {
   res.send('Hello From Md Minhajul Islam 😉')
 })

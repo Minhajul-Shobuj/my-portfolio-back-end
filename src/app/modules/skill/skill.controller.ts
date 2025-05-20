@@ -3,6 +3,8 @@ import httpStatus from 'http-status'
 import catchAsync from '../../utiles/catchAsync'
 import sendResponse from '../../utiles/sendResponse'
 import { SkillService } from './skill.service'
+import { checkGivenId } from '../blog/blog.utiles'
+import { Skill } from './skill.model'
 
 const createSkills: RequestHandler = catchAsync(async (req, res) => {
   const result = await SkillService.createskillsInDB(req.body)
@@ -23,7 +25,23 @@ const getAllSkills: RequestHandler = catchAsync(async (req, res) => {
     statusCode: httpStatus.OK,
   })
 })
+const deleteSkill: RequestHandler = catchAsync(async (req, res) => {
+  const { id } = req.params
+  checkGivenId(id)
+  const project = await Skill.findById(id)
+  if (!project) {
+    throw new Error('project is already Deleted')
+  }
+
+  await SkillService.deleteSkillFromDb(id)
+  sendResponse(res, {
+    statusCode: httpStatus.OK,
+    success: true,
+    message: 'Project deleted successfully',
+  })
+})
 export const SkillController = {
   createSkills,
   getAllSkills,
+  deleteSkill,
 }
