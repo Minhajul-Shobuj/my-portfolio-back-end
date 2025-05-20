@@ -6,7 +6,7 @@ _This is a backend application for MY portfolio web app. The application is crea
 
 ## 🚀 Live Demo
 
-🌐 [Click here to view the live version](https://portfolio-backend-gamma-ebon.vercel.app/api)
+🌐 [Click here to view the live version](https://portfolio-backend-gamma-ebon.vercel.app)
 
 ## 🛠️ Prerequisites
 
